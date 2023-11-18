@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <p>{"Dont't forget to CODE your DREAM | All Right Reserverd."}</p>;
+  return (
+    <p className="bg-slate-900 text-white py-2 text-sm text-center">
+      {"Dont't forget to CODE your DREAM | All Right Reserverd."}
+    </p>
+  );
 }

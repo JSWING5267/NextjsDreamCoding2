@@ -1,5 +1,13 @@
-import Image from 'next/image';
+import Image from "next/image";
+import Hero from "./components/Hero";
+import FeaturedPosts from "./components/FeaturedPosts";
 
-export default function Home() {
-  return <section className='bg-gray-500'>Main!</section>;
+export default function HomePage() {
+  return (
+    <>
+      <Hero />
+      {/* @ts-expect-error Server Component */}
+      <FeaturedPosts />
+    </>
+  );
 }
